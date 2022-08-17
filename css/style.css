@@ -1,0 +1,56 @@
+
+body { margin: 0;
+    background-color: #000;
+    background-image: url(barba.jpg); 
+    background-repeat: no-repeat;
+    background-size: 1370px 660px;
+    background-position-y: 20px;
+  
+}
+
+
+header { 
+    background-color: #212121; 
+    opacity: 98%;
+  align-items: center;
+  height: 90px;
+  display: flex;
+padding-left: 30px;
+justify-content: space-between;
+
+}
+
+
+header nav a  {text-decoration: none;
+    color: #696969;
+    margin: 0 20px;
+    padding: 3px 3px;
+    font-family:'Mohave', sans-serif;
+
+   
+}
+    
+    
+ header nav a:hover { background-color: #000;
+    border-radius: 15px;
+    
+}
+
+.logo { color: rgb(255, 255, 255);
+    font-family: 'Mohave', sans-serif;
+    font-size: 20px;
+                                                  
+}
+
+ /* footer { color: white;
+    background-color: #212121;
+  position: absolute;
+    bottom: 0;
+ width: 100%;
+font-family: 'Mohave', sans-serif;} */
+
+
+   
+
+
+
