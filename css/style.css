@@ -1,33 +1,27 @@
+/* INICIO */
 
-body { margin: 0;
-    background-color: #000;
-    background-image: url(barba.jpg); 
-    background-repeat: no-repeat;
-    background-size: 1370px 660px;
-    background-position-y: 20px;
-  
+
+ body { margin: 0;
+  background-color: #000;
 }
 
+div img { width: 1370px;
+  height: 574px; 
+} 
 
 header { 
     background-color: #212121; 
-    opacity: 98%;
   align-items: center;
-  height: 90px;
   display: flex;
-padding-left: 30px;
 justify-content: space-between;
-
 }
 
 
 header nav a  {text-decoration: none;
-    color: #696969;
-    margin: 0 20px;
-    padding: 3px 3px;
-    font-family:'Mohave', sans-serif;
-
-   
+    color: #696969;     
+    font-family:'Mohave', sans-serif;  
+    margin: 20px;
+    padding:  3px;
 }
     
     
@@ -39,18 +33,30 @@ header nav a  {text-decoration: none;
 .logo { color: rgb(255, 255, 255);
     font-family: 'Mohave', sans-serif;
     font-size: 20px;
-                                                  
-}
+    font-weight: bold;
+      margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px; 
+    padding: 5px;
+    line-height: 0.85;
+    border: 2px solid #fff;
+  }
 
- /* footer { color: white;
-    background-color: #212121;
-  position: absolute;
-    bottom: 0;
- width: 100%;
-font-family: 'Mohave', sans-serif;} */
 
+/* DISEÑO RESPONSIVE INICIO */
 
-   
+@media screen and (max-width: 400px) 
+ {header nav a 
+  { margin:2px;
+    padding-right: 10px;
+    justify-content: none;
+    font-size: small; }
+ }
+
+ @media screen and (max-width: 400px) 
+ { .logo
+  { margin-left: 10px;}
+ }
 
 
 

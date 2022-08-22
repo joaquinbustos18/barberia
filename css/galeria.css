@@ -1,35 +1,39 @@
 
 body { margin: 0;
     background-color: #000000;
-
 }
 
 header { 
     background-color: #212121; 
   align-items: center;
-  opacity: 90%;
   height: 50px;
 display: flex;
-padding-left: 0px;
-  
 }
 
 header nav a {  text-decoration: none;
     color: #000000;
-    margin: 0 20px;
-    display: inline-block;
+    margin: 020px;
     padding: 3px 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Mohave', sans-serif;
     text-align: center;}
     
 nav{margin: 0 auto;}
     
 
 
- header nav a:hover { background-color: #000;
+ header nav a:hover { background-color: rgb(74, 73, 73);
     border-radius: 15px;
     
 }
+
+.logo2 { color: rgb(250, 250, 250);
+    font-family: 'Mohave', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 5px; 
+    line-height: 1;
+  }
 
 
 .cortesdepelo { color: rgb(0, 0, 0);
