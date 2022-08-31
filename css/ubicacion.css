@@ -1,41 +1,172 @@
-body { margin: 0;
-    background-color: #000;
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  height: 1300px;
 }
 
-header { 
-    background-color: #e7e5e5c9; 
+header {
+  background-color: #212121;
   align-items: center;
-  opacity: 90%;
-  height: 50px;
-display: flex;
-padding-left: 30px;
-  
+  display: flex;
+  justify-content: space-between;
 }
 
-header nav a {  text-decoration: none;
-    color: #696969;
-    margin: 0 20px;
-    display: inline-block;
-    padding: 3px 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;}
-    
-nav{margin: 0 auto;}
-    
-
-
- header nav a:hover { background-color: #000;
-    border-radius: 15px;
-    
+header nav a {
+  text-decoration: none;
+  color: rgb(230, 217, 217);
+  font-family: "Mohave", sans-serif;
+  margin: 20px;
+  padding: 3px;
 }
 
-.mapa{ 
-    width: 400px;
-    height: 400px;
-    padding-top: 50px;
-
+header nav a:hover {
+  background-color: #000;
+  border-radius: 15px;
 }
 
-section{ text-align: center;
+.logo {
+  color: rgb(255, 255, 255);
+  font-family: "Mohave", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  line-height: 0.85;
+  border: 2px solid #fff;
+}
+.contenedor-ubicacion-fondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(contacto.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.ubicacion-titulo {
+  text-align: center;
+  padding-bottom: 150px;
+  font-family: "Mohave", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.contenedor-segunda-parte img {
+  width: 400px;
+  height: 300px;
+}
+
+.contenedor-segunda-parte {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(50%);
+}
+.barberia-foto-segunda-parte {
+  transform: translateX(-25%);
+}
+
+.mapa-segunda-parte {
+  transform: translateX(25%);
+}
+
+.contenedor-texto-segunda-parte {
+}
+
+.donde-encontrarnos {
+  color: rgb(54, 54, 54);
+  font-family: "Mohave", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  transform: translateY(-150px);
+}
+
+.palazzo {
+  color: white;
+  font-family: "Mohave", sans-serif;
+  font-size: 15px;
+  line-height: 1px;
+  text-align: center;
+  transform: translateY(-150px);
+}
+
+.calle {
+  color: white;
+  font-family: "Mohave", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  transform: translateY(-150px);
+}
+
+/* DISEÑO RESPONSIVE INICIO CELULAR */
+
+@media screen and (max-width: 400px) {
+  header nav a {
+    margin: 2px;
+    padding-right: 10px;
+    justify-content: none;
+    font-size: small;
+  }
+  .contenedor-segunda-parte {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .barberia-foto-segunda-parte {
+    transform: translateY(-60%);
+  }
+  .mapa-segunda-parte {
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    margin-left: 10px;
+  }
+}
+
+/* DISEÑO RESPOSIVE INICIO TABLET */
+
+@media screen and (max-width: 870px) {
+  header nav a {
+    margin: 2px;
+    padding-right: 10px;
+    justify-content: none;
+    font-size: medium;
+  }
+  .donde-encontrarnos {
+    color: rgb(54, 54, 54);
+    font-family: "Mohave", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    transform: translateY(-150px);
+  }
+
+  .palazzo {
+    color: white;
+    font-family: "Mohave", sans-serif;
+    font-size: 10px;
+    line-height: 1px;
+    text-align: center;
+    transform: translateY(-150px);
+  }
+
+  .calle {
+    color: white;
+    font-family: "Mohave", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    transform: translateY(-150px);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .logo {
+    margin-left: 10px;
+  }
 }
