@@ -40,8 +40,11 @@ header nav a {
   color: rgb(230, 217, 217);
 }
 
-div p {
-  color: white;
+.cartas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 /* DISEÑO RESPONSIVE INICIO CELULAR */
 

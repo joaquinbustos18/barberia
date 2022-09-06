@@ -111,20 +111,25 @@ header nav a:hover {
     justify-content: none;
     font-size: small;
   }
+  .contenedor-segunda-parte img {
+    width: 300px;
+    height: 200px;
+  }
   .contenedor-segunda-parte {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
+
   .barberia-foto-segunda-parte {
     transform: translateY(-60%);
   }
   .mapa-segunda-parte {
     transform: translateX(0%);
   }
-}
-
-@media screen and (max-width: 400px) {
+  .contenedor-texto-segunda-parte {
+    transform: translateY(30px);
+  }
   .logo {
     margin-left: 10px;
   }
@@ -163,9 +168,6 @@ header nav a:hover {
     text-align: center;
     transform: translateY(-150px);
   }
-}
-
-@media screen and (max-width: 770px) {
   .logo {
     margin-left: 10px;
   }
