@@ -1,3 +1,15 @@
+$margin: margin 2px font-size medium;
+$padding-right: padding-right 10px;
+$justify-content: justify-content none;
+$font-size: medium;
+
+@mixin responsive($margin, $padding-right, $justify-content, $font-size) {
+  margin: $margin;
+  padding-right: $padding-right;
+  justify-content: $justify-content;
+  font-size: $font-size;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -32,10 +44,7 @@ body {
 }
 
 .barber {
-  font-family: Asap Condensed;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
+  @extend .since;
 }
 
 header {
@@ -71,10 +80,7 @@ header {
 /* DISEÑO RESPONSIVE INICIO CELULAR */
 @media screen and (max-width: 770px) {
   header nav a {
-    margin: 2px;
-    padding-right: 10px;
-    justify-content: none;
-    font-size: medium;
+    @include responsive;
   }
 }
 @media screen and (max-width: 400px) {
@@ -87,10 +93,7 @@ header {
 
 @media screen and (max-width: 770px) {
   header nav a {
-    margin: 2px;
-    padding-right: 10px;
-    justify-content: none;
-    font-size: medium;
+    @include responsive;
   }
 }
 
