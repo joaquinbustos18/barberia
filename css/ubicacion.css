@@ -6,6 +6,7 @@ body {
 
 header {
   background-color: #212121;
+  background-image: url(fondo-ubicacion.jpg);
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -13,19 +14,19 @@ header {
 
 header nav a {
   text-decoration: none;
-  color: rgb(230, 217, 217);
+  color: #000;
   font-family: "Mohave", sans-serif;
   margin: 20px;
   padding: 3px;
 }
 
 header nav a:hover {
-  background-color: #000;
+  background-color: rgb(221, 221, 221);
   border-radius: 15px;
 }
 
 .logo {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Mohave", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -34,12 +35,12 @@ header nav a:hover {
   margin-bottom: 5px;
   padding: 5px;
   line-height: 0.85;
-  border: 2px solid #fff;
+  border: 2px solid #000;
 }
 .contenedor-ubicacion-fondo {
   width: 100%;
   height: 100vh;
-  background-image: url(contacto.jpg);
+  background-image: url(fondo-ubicacion.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;

@@ -58,18 +58,29 @@ div img {
   grid-template-columns: repeat(5, 230px);
   grid-template-rows: repeat(2, 230px);
   column-gap: 30px;
-  row-gap: 10px;
+  row-gap: 15px;
   justify-content: center;
   margin-top: 50px;
+  text-align: center;
 }
 .todaslasfotos img {
   width: 100%;
   height: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .todaslasfotos :hover {
   transform: scale(1.1);
   opacity: 1.1;
+}
+.todaslasfotos .texto-imagen {
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  transform: translateY(-55px);
+  font-family: "Mohave", sans-serif;
 }
 
 /*  DISEÑO RESPONSIVE CELULAR */
