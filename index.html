@@ -1,60 +1,293 @@
 <!DOCTYPE html>
-<html>
   <head>
-    <title>BARBERSHOP</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="widht=device-width,initial-scale=1.0" />
-    <title> Barberia Niko Barbershop</title>
-    <meta name="keywords" content="pelo, cortes de pelo, peluqueria, aspecto fisico, barberia comodoro rivadavia"/>
-    <meta name="description" content="Ofrecemos un servios de corte de pelo a nivel profesional y estetico"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="icon" href="img/logo-arriba.jfif" />
-    <link href="http://fonts.cdnfonts.com/css/mohave" rel="stylesheet" />
-    <link href="http://fonts.cdnfonts.com/css/Righteous" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="pelo, cortes de pelo, peluqueria, aspecto fisico">
+    <meta name="description" content="Ofrecemos un servios de corte de pelo a nivel profesional y estetico">
+    <title>NIKO BARBER</title>
+ 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link
-      href="http://fonts.cdnfonts.com/css/Asap Condensed"
       rel="stylesheet"
-    />
-    <link rel="icon" href="img/logo nico.jfif" />
+      type="text/css"
+    /> 
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link href="http://fonts.cdnfonts.com/css/mohave" rel="stylesheet" />
+    <link rel="icon" href="img/logo-arriba.jfif">
+
   </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <body>
-    <header>
-       <div class="logo">
-            <span>NIKO</span> </br> <span>BAR</span> <br> <span>BER</span> </br>   
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"   > 
+          </button>
+
+          <div class="logo">
+            <span > <a href="#page-top">  NIKO</span> </br> <span>BAR</span> <br> <span>BER</span> </br>  </a>
       </div> 
+        </div>
 
-      <nav class="barra">
-        <a class="galeria1" href="galeria.html"> GALERIA </a>
-        <a href="contacto.html"> CONTACTO </a>
-        <a href="ubicacion.html">UBICACIÓN</a>
-
-      </nav>
-    </header>
-    <div class="foto">
-      <div class="contenedor">
-            <div class="letra">
-              <div class="since">SINCE 2020</div>
-              <div class="niko">NIKO</div>
-              <div class="barber">BARBER</div>
+        <!-- NAV BAR -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>  <a href="#barberia" class="page-scroll">Barberia</a></li>
+            <li>  <a href="#galeria" class="page-scroll">Galeria</a></li>
+            <li>  <a href="#nuestro-barbero" class="page-scroll">Nuestro Barbero</a></li>
+            <li>  <a href="#contacto" class="page-scroll">Contacto</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TITULO PÁGINA PRINCIPAL -->
+    <header id="header"> 
+      <div class="fondo-barber">
+        <div class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="intro-text"> 
+            
+                <h1 class="niko-barber">NIKO BARBER</h1>
+                <p>Tu Barberia De Confianza</p>
+                <a href="#barberia" class="btn btn-custom btn-lg page-scroll"
+                  >Descubre Nuestra Barberia</a >
+              </div>
             </div>
           </div>
-    </div>
-<!-- 
-    <div class="contenedor">
-      <div class="letra">
-        <div class="since">SINCE 2020</div>
-        <div class="niko">NIKO</div>
-        <div class="barber">BARBER</div>
+        </div> 
       </div>
-    </div> -->
+   </header> 
+    <!-- NUESTRA BARBERIA -->
+     <div id="barberia">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="about-img">
+              <img src="img/barberiafrente.jpg" class="img-responsive"  />
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="about-text">
+              <h2>Nuestra Barberia</h2>
+              <hr />
+              <p>
+                Empecé como un hobby en 2018, ahora se volvio parte de mi rutina habitual, con clientes fieles y frecuentes.
+              </p>
+              <h3>Sobre Nosotros</h3>
+              <p>
+                     Contamos con conocimiento de barberia avanzada para caballeros, barba y tintura. Nos podes encontrar en Barrio Palazzo a media cuadra de la rotanda del avión.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- GALERIA -->
+    <div id="galeria">
+      <div class="section-title text-center center">
+        <!-- DIV DONDE ESTA DENTRO LA IMAGEN DE GALERIA  -->
+         <div class="overlay"> 
+          <h2>GALERIA</h2>
+          <hr />  
+          <p>
+           Conocé un poco de nuestros cortes
+          </p>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          <div class="categories">
+       
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-items">
+            <div class="col-sm-6 col-sm-4 col-sm-4 ">
+              <div class="portfolio-item">
+                    <img
+                      src="img/bomba.png.jfif"
+                      class="img-responsive" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+              <div class="portfolio-item">
+                    <img
+                      src="img/manolete.jfif"
+                      class="img-responsive" />
+              </div>
+            </div>
 
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+              <div class="portfolio-item">
+                    <img
+                      src="img/corte-5.png"
+                      class="img-responsive" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+              <div class="portfolio-item">
+                   <img
+                      src="img/corte 3 nuevo.png"
+                      class="img-responsive" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+              <div class="portfolio-item">
+                    <img
+                      src="img/corte 4 nuevo.png"
+                      class="img-responsive" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 ">
+              <div class="portfolio-item">
+                    <img
+                      src="img/corte 8 nuevo.png"
+                      class="img-responsive" />
+              </div>
+            </div>
 
-    <div class="contacto">
-      <h3>Contactanos</h3>
+                </div> 
+                </div> 
+        </div> 
+  </div>  
+    <!-- NUESTRO BARBERO -->
+    <div id="nuestro-barbero" class="text-center">
+      <div class="overlay">
+        <div class="container">
+          <div class="col-md-10 col-md-offset-1 section-title">
+            <h2>Nuestro Barbero</h2>
+            <hr />
+
+          </div>
+          <div id="row">
+            <div class="col-md-4 team">
+              <div class="thumbnail">
+                <div class="team-img">
+                  <img src="img/nuestro barbero 1.jfif" alt="..." />
+                </div>
+                <div class="caption">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 team">
+              <div class="thumbnail">
+                <div class="team-img">
+                  <img src="img/nuestro barbero 1.jfif" alt="..." />
+                </div>
+                <div class="caption">
+                  <h3>Nicolas Hernandez</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 team">
+              <div class="thumbnail">
+                <div class="team-img">
+                  <img src="img/nuestro barbero 1.jfif" alt="..." />
+                </div>
+                <div class="caption">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- NÚMERO DE CELULAR -->
+    <div id="contacto" class="text-center">
+      <div class="container">
+        <h2>
+          Queres Reservar Tu Turno? Escribinos <strong>+54 2974131027</strong>
+        </h2>
+      </div>
+    </div>
+    <!-- CONTACTO Y PIE DE PÁGINA -->
+    <div id="contact" class="text-center">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Contacto</h2>
+          <hr />
+          <p>
+           No dudes en contactarnos si tenes alguna duda.
+          </p>
+        </div>
+        <div class="col-md-10 col-md-offset-1">
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Nombre"
+                    required="required"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Correo"
+                    required="required"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                rows="4"
+                placeholder="Alguna duda"
+                required
+              ></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-custom btn-lg">
+              ENVIAR
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container text-center">
+        <div class="col-md-4">
+          <h3>Dirección</h3>
+          <div class="contact-item">
+            <p>Comodoro Rivadavia, Chubut </p>
+            <p> Lavalle 134</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>HORARIOS</h3>
+          <div class="contact-item">
+            <p>Lunes a Viernes: 14:00 PM - 12:00PM</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Contacto</h3>
+          <div class="contact-item">
+            <p>Telefono: +54 2974131027</p>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-  </body>
+          </div>
+        </div>
+      </div>
+      <script src="./js/bootstrap.bundle.min.js"></script>
 </html>

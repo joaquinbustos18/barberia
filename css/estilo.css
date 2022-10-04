@@ -1,28 +1,8 @@
-@charset "UTF-8";
 body {
-  margin: 0;
-  background-color: black;
-}
-header {
-  background-color: #212121;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-header nav a {
-  text-decoration: none;
-  color: #e6d9d9;
   font-family: "Mohave", sans-serif;
-  margin: 20px;
-  padding: 3px;
 }
-header nav a:hover {
-  background-color: #000;
-  border-radius: 15px;
-}
-
 .logo {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Mohave", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -31,91 +11,319 @@ header nav a:hover {
   margin-bottom: 5px;
   padding: 5px;
   line-height: 0.85;
-  border: 2px solid #fff;
+  border: 2px solid rgb(48, 48, 48);
 }
-.foto {
+h2 {
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 34px;
+  color: #333;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #333;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 16px;
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+
+/* HOVER DEL LOGO */
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #222;
+}
+ul,
+ol {
+  list-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+/* LINEA DE ABAJO DEL TITULO DE NUESTRA BARBERIA */
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #e7e9e5;
+  margin: 0;
+  margin-bottom: 40px;
+  border: 0;
+}
+
+/* PARTE DE ARRIBA, SOBRE MI, ETC*/
+#menu {
+  padding: 2 px;
+  transition: all 0.8s;
+}
+#menu.navbar-default {
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #ddd;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px 0;
+  border: 2px solid transparent;
+  letter-spacing: 0.5px;
+  margin: 15px 15px 0 15px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+  color: grey;
+}
+
+/* BARRA DE ABAJO Y TITULO DE GALERIA Y CONOCE A NUESTRO BARBERO */
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title .overlay {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.section-title p {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.section-title hr {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+/* BOTON DESCUBRE NUESTRA BARBERIA */
+.btn-custom {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: grey;
+  border: 0;
+  padding: 14px 20px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 0;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+/* CAMBIO DE FONDO DEL BOTON DESCUBRE NUESTRA BARBERIA */
+.btn-custom:hover {
+  color: #fff;
+  background-color: #000000;
+}
+/* FONDO Y TITULO PÁGINA PRINCIPAL */
+.fondo-barber {
+  display: table;
   width: 100%;
-  height: 500px;
-  background-image: url(inicio2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 0;
+  background: url(../img/fondo.png) no-repeat center center;
 }
-
-.contenedor {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.fondo-barber .overlay {
+  background: rgba(0, 0, 0, 0.4);
 }
-.contenedor .letra {
-  justify-content: center;
-  text-align: center;
-  transform: translateY(80%);
-  margin-left: 40px;
+.fondo-barber h1 {
+  font-family: "Mohave", sans-serif;
+  color: #fff;
+  font-size: 10em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
-.letra {
-  color: white;
-  line-height: 0.9;
+.fondo-barber span {
+  color: #e5eec9;
+  font-weight: 600;
 }
-
-.since {
-  font-family: Asap Condensed;
-  font-size: 20px;
-  text-align: start;
-  font-weight: bold;
-  display: flex;
-  margin-left: 10px;
-}
-
-.niko {
-  font-family: Righteous;
-  font-size: 100px;
-  margin-left: 10px;
-}
-
-.barber {
-  font-family: Asap Condensed;
-  font-size: 20px;
-  /* text-align: center; */
-  font-weight: bold;
-  margin-left: 10px;
-}
-
-.contacto {
-  color: white;
-  text-align: center;
+.fondo-barber p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
   margin-top: 10px;
+  margin-bottom: 40px;
+}
+header .intro-text {
+  padding-top: 250px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+/* BARBERIA*/
+#barberia {
+  padding: 120px 0;
+  background-color: #131313;
+}
+#barberia h2 {
+  color: white;
+}
+#barberia h3 {
+  font-size: 20px;
+  color: white;
+}
+#barberia p {
+  line-height: 24px;
+  margin: 15px 0 30px;
+  color: #ddd;
+}
+#barberia .about-text {
+  margin-left: 10px;
+}
+#barberia .about-img {
+  display: inline-block;
+  position: relative;
 }
 
-/* DISEÑO RESPONSIVE INICIO CELULAR */
-@media screen and (max-width: 770px) {
-  header nav a {
-    margin: 2px;
-    padding-right: 10px;
-    justify-content: none;
-    font-size: medium;
-  }
+/* GALERIA */
+
+#galeria {
+  padding: 0 0 100px 0;
+  background-color: #121212;
+}
+#galeria .section-title {
+  background: url(../img/galeria.jpg) center center no-repeat fixed;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+/* TITULO GALERIA */
+#galeria .section-title h2 {
+  color: rgb(255, 255, 255);
+}
+.categories {
+  padding-bottom: 20px;
+  text-align: center;
+}
+ul.cat li {
+  display: inline-block;
+}
+ol.type li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 20px 0;
 }
 
-@media screen and (max-width: 400px) {
-  .logo {
-    margin-left: 10px;
-  }
+.portfolio-item {
+  margin: 15px 0;
 }
 
-/* DISEÑO RESPOSIVE INICIO TABLET */
-@media screen and (max-width: 770px) {
-  header nav a {
-    margin: 2px;
-    padding-right: 10px;
-    justify-content: none;
-    font-size: medium;
-  }
+/* NUESTRO BARBERO */
+#nuestro-barbero {
+  color: #fff;
+  background: #444 url(../img/fondo\ nuestro\ barbero.jpg) center top no-repeat
+    fixed;
+  background-size: cover;
+}
+#nuestro-barbero .overlay {
+  padding: 120px 0 80px 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#nuestro-barbero h2,
+#nuestro-barbero p {
+  color: #fff;
+}
+#nuestro-barbero hr {
+  background: #fff;
+}
+#nuestro-barbero h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 0;
+}
+#nuestro-barbero img {
+  width: 280px;
+}
+#nuestro-barbero .thumbnail {
+  background: transparent;
+  border: 0;
 }
 
-@media screen and (max-width: 770px) {
-  .logo {
-    margin-left: 10px;
-  }
+#nuestro-barbero .thumbnail .team-img {
+  display: inline-block;
+  position: relative;
+}
+
+/* CONTACTO */
+#contacto {
+  padding: 90px 0;
+  color: #fff;
+  background-color: #212121;
+}
+
+#contacto h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* CONTACTO SECCION */
+#contact {
+  padding: 100px 0 60px 0;
+  background: #000000;
+}
+#contact .section-title p {
+  color: #777;
+}
+#contact form {
+  padding: 0;
+}
+#contact h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* FOOTER SECCION*/
+#footer {
+  background: #262626;
+  padding: 50px 0 0 0;
+}
+#footer h3 {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* TEXTO DE ABAJO DEL TODO */
+#footer p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
 }
